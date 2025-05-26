@@ -1,0 +1,127 @@
+/* === RESET Y FUENTE === */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100..900&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Montserrat', Arial, sans-serif;
+  background-color: #1b1b1b; /* Fondo oscuro */
+  color: #e0e0e0; /* Texto claro */
+  line-height: 1.6;
+  overflow-x: hidden;
+}
+
+/* === HEADER / NAV === */
+.container {
+  width: 100%;
+  background-color: #2e2e2e; /* Gris industrial */
+  padding: 10px 20px;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  margin-bottom: 10px;
+  border-bottom: 3px solid #d18700; /* Naranja oxidado */
+}
+
+.container-co {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.logos img {
+  filter: brightness(0.9) contrast(1.2);
+}
+
+
+
+/* === MENÚ DE NAVEGACIÓN === */
+.menu {
+  display: flex;
+  gap: 20px;
+  list-style: none;
+}
+
+.menu li a {
+  color: #e0e0e0;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 1.1rem;
+  transition: color 0.3s;
+}
+
+.menu li a:hover {
+  color: #d18700;
+}
+
+/* === SECCIÓN DE CONTENIDO PRINCIPAL === */
+main h1 {
+  font-size: 2.5em;
+  text-align: center;
+  margin: 20px 0;
+  text-shadow: 0 0 10px #d18700;
+}
+
+/* === CUADRO HALF-LIFE === */
+.cuadrado {
+  width: 500px;
+  height: 900px;
+  margin: 20px auto;
+  background: linear-gradient(90deg, #5c755e 0%, #2e2e2e 80%);
+  padding: 20px;
+  border: 30px solid #c28514;
+  color: #fff;
+  font-size: 1.1rem;
+}
+
+/* === BLOQUES ABSOLUTOS === */
+.uno, .dos, .tres {
+  width: 100px;
+  height: 100px;
+  position: absolute;
+  left: 300px;
+  top: 0;
+}
+
+.uno {
+  background-color: #2e2e2e;
+  z-index: -1;
+}
+
+.dos {
+  background-color: #5c755e;
+  z-index: -1;
+}
+
+.tres {
+  background-color: #d18700;
+  z-index: 1;
+}
+    .footer {
+        background-color: #16161d;
+        padding: 2rem;
+        text-align: center;
+        color: #cccccc;
+  box-shadow: 0 0 18px #eaa929;
+        font-size: 0.9rem;
+        margin-top: 50px;
+    }
+    
+    footer {
+      background-color: #16161d;
+      padding: 2rem;
+      text-align: center;
+      border-top: 1px solid #24242e;
+      color: #cccccc;
+      font-size: 0.9rem;
+  }
+  
+  footer p {
+      max-width: 1200px;
+      margin: 0 auto;
+  }

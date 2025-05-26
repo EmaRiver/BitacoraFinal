@@ -1,0 +1,295 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Montserrat', Arial, sans-serif;
+  background-color: #1b1b1b;
+  color: #e0e0e0;
+  line-height: 1.6;
+  overflow-x: hidden;
+}
+
+.navbar {
+  background-color: #2e2e2e;
+  padding: 0px 20px;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  border-bottom: 3px solid #d18700;
+}
+
+.header-wrap {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  height: 150px;
+}
+
+.logo {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #fbff25;
+  text-shadow: 1px 1px 5px #d18700;
+}
+
+/* NAV LINKS */
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+  margin: 0;
+  padding: 0;
+}
+
+.nav-links li {
+  position: relative;
+}
+
+/* DROPDOWN */
+.dropbtn {
+  color: white;
+  padding: 16px;
+  font-size: 16px;
+  border: none;
+  background: none;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background-color: #f1f1f1;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown-content a:hover {
+  background-color: #ddd;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.dropdown:hover .dropbtn {
+  background-color: #444;
+}
+
+
+
+
+/* ===== NAVIGATION ===== */
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 2rem;
+  margin: 0;
+}
+
+.nav-links li a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 1.3rem;
+  transition: color 0.3s;
+}
+
+.nav-links li a:hover {
+  color: #fbff25;
+}
+
+/* ===== CONTENIDO GENERAL ===== */
+.main-content h1  {
+  font-size: 4em;
+  text-shadow: 0 0 10px #fa9a00;
+  text-align: center;
+}
+.tarjeta {
+  background-color: #2e2e2e;
+  margin-top: 60px;
+  padding: 3rem; /* Relleno interno generoso */
+  margin-bottom: 40px;
+  text-align: center; /* Contenido centrado */
+  transition: all 0.3s ease; /* Transición suave para efectos hover */
+  box-shadow: 0 0 18px #eaa929;
+  border-radius: 30px;
+}
+.imagendefondo2 {
+  width: 1600px;
+  height: 900px;
+  background-image: url('IMAGENES/hl2wallpaper04_16x9.webp');
+  background-size: cover;
+  background-position: center;
+  margin-bottom: 50px;
+}
+.tarjeta1 {
+  background-color: #2e2e2e;
+  padding: 1rem; /* Relleno interno generoso */
+  margin-bottom: 40px;
+  margin-top: 30px;
+  margin-left: 170px;
+  margin-right: 160px;
+  text-align: center; /* Contenido centrado */
+  transition: all 0.3s ease; /* Transición suave para efectos hover */
+  box-shadow: 0 0 18px #eaa929;
+  border-radius:30px;
+}
+.tarjeta1:hover {
+  transform: translateY(-10px); /* Efecto de levitación (sube 10px) */
+  box-shadow: 0 15px 30px #42264f
+}
+
+/* Efecto hover para tarjetas */
+.tarjeta:hover {
+  transform: translateY(-10px); /* Efecto de levitación (sube 10px) */
+  box-shadow: 0 15px 30px #42264f
+}
+
+/* Iconos dentro de las tarjetas */
+.icono {
+  margin-left: 545px;
+  font-size: 2.5rem; /* Tamaño grande para iconos */
+  color: #c0a062; /* Color dorado */
+  margin-bottom: 1.5rem; /* Espaciado inferior */
+}
+
+
+/* Títulos de las tarjetas */
+.titulo-tarjeta {
+  font-size: 1.3rem; /* Tamaño aumentado */
+  margin-bottom: 1rem; /* Espaciado inferior */
+  color: #ffffff; /* Texto blanco */
+  
+}
+.container2 {
+  gap: 1rem; /* Espacio entre tarjetas */
+  max-width: 1200px; /* Ancho máximo */
+  max-height: 500px;
+  margin: 0 auto; /* Centrado horizontal */
+  margin-bottom: 300px;
+}
+.texto {
+  color: #cccccc; /* Color gris claro */
+  font-size: 0.95rem; /* Tamaño ligeramente reducido */
+}
+p {
+  font-size: 1.2em;
+}
+.bloque1 {
+  background-color: #2e2e2e;
+  padding: 2rem;
+  margin: 100px auto 40px auto; /* Centrado horizontal con top reducido */
+  max-width: 800px;
+  text-align: left; /* Mejor para listas y texto legible */
+  transition: all 0.3s ease;
+  box-shadow: 0 0 18px #eaa929;
+  border-radius: 30px;
+  color: white;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.bloque1 ul,
+.bloque1 ol {
+  padding-left: 1.5rem; /* Acerca los puntos */
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+
+.bloque1 li {
+  margin-bottom: 0.5rem;
+  line-height: 1.5;
+}
+
+.imagencentrada {
+  display: block;
+  margin: auto;
+  border: 5px solid #d18700;
+}
+
+.main-content {
+  max-width: 90%;
+  margin: 10px auto;
+  padding: 20px;
+  background: rgba(102, 81, 44, 0.8);
+  border-radius: 20px;
+  box-shadow: 0 0 18px #eaa929;
+}
+
+.seccion-titulo {
+  margin-bottom: 20px;
+}
+
+.lista {
+  padding-left: 20px;
+  margin: 10px 0;
+}
+
+/* ===== ANIMACIONES Y ESTÉTICA ===== */
+.cuadrado {
+  width: 500px;
+  height: 900px;
+  margin: auto;
+  background: linear-gradient(90deg, #fbff25 0%, #ffb400 80%);
+  padding: 2px;
+  border: 30px solid saddlebrown;
+}
+.aa {
+      font-size: 2.5em;
+  text-align: center;
+  margin: 20px 0;
+  text-shadow: 0 0 10px #d18700;
+}
+
+.imagendefondo {
+    width: 100%;
+  height: 650px; /* Altura mínima del 80% del viewport */
+  display: flex; /* Usa flexbox para centrar contenido */
+  align-items: center; /* Centra verticalmente el contenido */
+  /* Fondo con gradiente semitransparente sobre imagen de fondo */
+  background: linear-gradient(rgba(10, 10, 15, 0.8), rgba(98, 98, 109, 0.8)), 
+              url('IMAGENES/07ugp5ljimc91.gif') center/cover no-repeat;
+  /* center: centra la imagen | cover: cubre todo el espacio | no-repeat: evita repetición */
+  padding: 0 2rem; /* Relleno horizontal */
+}
+
+    .footer {
+        background-color: #16161d;
+        padding: 2rem;
+        text-align: center;
+        color: #cccccc;
+  box-shadow: 0 0 18px #eaa929;
+        font-size: 0.9rem;
+        margin-top: 50px;
+    }
+    
+    footer {
+      background-color: #16161d;
+      padding: 2rem;
+      text-align: center;
+      border-top: 1px solid #24242e;
+      color: #cccccc;
+      font-size: 0.9rem;
+  }
+  
+  .espacio{
+    padding: 2rem;
+  }
+  footer p {
+      max-width: 1200px;
+      margin: 0 auto;
+  }
